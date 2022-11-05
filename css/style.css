@@ -71,7 +71,7 @@ ul, li {
 }
 
 .header {
-  background: rgba(255, 255, 255, 0.75);
+  background: white;
 }
 .header__wrapper {
   display: flex;
@@ -710,6 +710,13 @@ ul, li {
   .frm2 {
     display: none;
   }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
   .nav-menu--active {
     display: block;
     position: fixed;
@@ -738,6 +745,9 @@ ul, li {
   }
   .nav-menu__item:first-child {
     padding-top: 50px;
+  }
+  .offer {
+    margin-top: 70px;
   }
 }
 @media (max-width: 721px) {
