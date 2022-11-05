@@ -1,0 +1,101 @@
+.offer
+    &__wrapper
+        display: flex
+        width: 100%
+        height: 100vh
+        position: relative
+    &__block-1
+        background: radial-gradient(137.77% 194.67% at -1.72% 0%, rgba(0, 0, 0, 0.45) 0%, rgba(0, 153, 239, 0.45) 100%)
+        backdrop-filter: blur(15px)
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 30px 30px 0 0
+        &--wrapp
+            // display: flex
+            // flex-direction: column
+            // align-items: center
+            text-align: center
+            // margin-top: 75px
+            & h1
+                font-style: normal
+                font-weight: 700
+                font-size: 40px
+                line-height: 48px
+                width: 80%
+                margin: auto
+            & h2
+                margin-top: 25px
+                margin-bottom: 15px
+                color: #CF0000
+                // font-style: italic
+                font-weight: 400
+                & span
+                    font-family: 'Times New Roman'
+                    font-style: italic
+                    font-weight: 400
+                    font-size: 45px
+                    line-height: 52px
+            & p
+                font-weight: 500
+                margin-bottom: 20px
+    &__block-2
+        background-image: url("../img/offer/offer.png")
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 100%
+        height: inherit
+        position: relative
+        &--img
+            background-image: url("../img/offer/vasia.png")
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            width: 90%
+            height: 70%
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+            z-index: 80
+    // &__form
+    //     margin-bottom: 40px
+
+.offer-blocks
+    width: 50%
+.offer-btn
+    cursor: pointer
+    background-image: url("../img/offer/offer-btn.svg")
+    width: 120px
+    height: 120px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    top: 60%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+
+.form
+    &__wrapper
+        display: flex
+        flex-direction: column
+        width: 60%
+        margin: auto
+    &__input
+        padding-left: 20px
+        background: #FFFFFF
+        border-radius: 30px
+        border: none
+        height: 44px
+        margin-bottom: 10px
+    &__btn
+        background: #CF0000
+        border-radius: 30px
+        border: none
+        height: 44px
+        cursor: pointer
+        & a
+            color: white

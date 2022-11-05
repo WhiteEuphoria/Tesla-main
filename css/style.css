@@ -1,0 +1,583 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.outer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.text-s {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.text-m {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-l {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+.logo {
+  width: 184px;
+  height: 34px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.75);
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.nav-menu {
+  display: flex;
+}
+.nav-menu__item {
+  margin-right: 30px;
+  font-weight: 400;
+}
+.nav-menu__item:last-child {
+  margin: 0;
+}
+
+.offer__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.offer__block-1 {
+  background: radial-gradient(137.77% 194.67% at -1.72% 0%, rgba(0, 0, 0, 0.45) 0%, rgba(0, 153, 239, 0.45) 100%);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0 0;
+}
+.offer__block-1--wrapp {
+  text-align: center;
+}
+.offer__block-1--wrapp h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  width: 80%;
+  margin: auto;
+}
+.offer__block-1--wrapp h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #CF0000;
+  font-weight: 400;
+}
+.offer__block-1--wrapp h2 span {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+}
+.offer__block-1--wrapp p {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.offer__block-2 {
+  background-image: url("../img/offer/offer.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+.offer__block-2--img {
+  background-image: url("../img/offer/vasia.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 80;
+}
+
+.offer-blocks {
+  width: 50%;
+}
+
+.offer-btn {
+  cursor: pointer;
+  background-image: url("../img/offer/offer-btn.svg");
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+.form__input {
+  padding-left: 20px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  border: none;
+  height: 44px;
+  margin-bottom: 10px;
+}
+.form__btn {
+  background: #CF0000;
+  border-radius: 30px;
+  border: none;
+  height: 44px;
+  cursor: pointer;
+}
+.form__btn a {
+  color: white;
+}
+
+.revolution {
+  background-color: black;
+  height: 500px;
+}
+.revolution__wrapper {
+  display: flex;
+}
+.revolution__block {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.revolution__block--wrapp {
+  width: 80%;
+  margin: auto;
+}
+.revolution__block h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+.revolution__marketing {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 2px 18px #4D0000);
+  border-radius: 30px;
+}
+.revolution__marketing div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.revolution__marketing span {
+  color: #CF0000;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 76px;
+  font-size: 60px;
+}
+.revolution__marketing p {
+  width: 60%;
+  font-weight: 400;
+}
+
+.movie {
+  height: 500px;
+}
+
+.smartphone {
+  background-image: url("../img/smartphone/smartphone2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.smartphone__wrapper {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.smartphone__wrapper p {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.smartphone__brend {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img-1 {
+  background-image: url("../img/smartphone/img-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 109px;
+  height: 109px;
+}
+
+.img-2 {
+  background-image: url("../img/smartphone/img-2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 123px;
+}
+
+.img-3 {
+  background-image: url("../img/smartphone/img-3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 86px;
+  height: 92px;
+}
+
+@media (max-width: 1094px) {
+  .offer__wrapper {
+    height: 110vh;
+  }
+  .offer__block-1 h1 {
+    width: 90%;
+  }
+  .offer__block-2--img {
+    width: 90%;
+    height: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .text-s {
+    font-size: 14px;
+  }
+  .text-m {
+    font-size: 18px;
+  }
+  .text-l {
+    font-size: 32px;
+  }
+  .offer-btn {
+    width: 110px;
+    height: 110px;
+  }
+  .nav-menu__item {
+    margin-right: 22px;
+  }
+  .offer__wrapper {
+    height: 940px;
+  }
+  .offer__block-1 {
+    background-image: url("../img/offer/offer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .offer__block-1 h1 {
+    width: 90%;
+    font-size: 35px;
+  }
+  .offer__block-1 h2 span {
+    font-size: 40px;
+  }
+  .offer__block-2 {
+    display: none;
+  }
+  .offer__block---img {
+    background-image: url("../img/offer/vasia.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 370px;
+    margin: auto;
+  }
+  .offer-blocks {
+    width: 100%;
+  }
+  .offer-btn {
+    top: 260px;
+    left: 75%;
+    margin-right: 0;
+    transform: translate(0, 0);
+  }
+  .movie {
+    height: 580px;
+  }
+  .revolution {
+    height: 580px;
+  }
+  .revolution__block h2 {
+    font-size: 25px;
+  }
+  .revolution__marketing div {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .revolution__marketing div p {
+    width: 180px;
+  }
+}
+@media (max-width: 769px) {
+  .outer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .offer__block---img {
+    width: 400px;
+    height: 340px;
+  }
+  .movie {
+    height: 520px;
+  }
+  .revolution {
+    height: 100%;
+  }
+  .revolution__block {
+    height: 520px;
+  }
+  .revolution__wrapper {
+    flex-direction: column;
+  }
+  .img-1 {
+    width: 89px;
+    height: 89px;
+  }
+  .img-2 {
+    width: 80px;
+    height: 98px;
+  }
+  .img-3 {
+    width: 76px;
+    height: 82px;
+  }
+  .smartphone__wrapper p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 721px) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+  }
+  .offer-btn {
+    top: 290px;
+  }
+}
+@media (max-width: 561px) {
+  .revolution {
+    height: 100%;
+  }
+  .revolution__block {
+    height: 560px;
+  }
+}
+@media (max-width: 541px) {
+  .text-s {
+    font-size: 14px;
+  }
+  .text-m {
+    font-size: 16px;
+  }
+  .text-l {
+    font-size: 28px;
+  }
+  .offer__wrapper {
+    height: 860px;
+  }
+  .offer__block-1 h1 {
+    font-size: 28px;
+  }
+  .offer__block-1 h2 {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  .offer__block-1 p {
+    width: 80%;
+    margin: auto;
+  }
+  .offer__block---img {
+    width: 340px;
+    height: 280px;
+  }
+  .form__wrapper {
+    width: 380px;
+  }
+  .offer-btn {
+    width: 100px;
+    height: 100px;
+    top: 330px;
+  }
+  .img-1 {
+    width: 75px;
+    height: 75px;
+  }
+  .img-2 {
+    width: 70px;
+    height: 86px;
+  }
+  .img-3 {
+    width: 66px;
+    height: 72px;
+  }
+  .smartphone__wrapper {
+    text-align: center;
+    width: 90%;
+  }
+}
+@media (max-width: 460px) {
+  .offer__wrapper {
+    height: 880px;
+  }
+}
+@media (max-width: 421px) {
+  .revolution__block h2 {
+    font-size: 22px;
+  }
+  .revolution__block span {
+    font-size: 54px;
+  }
+  .smartphone__wrapper p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 391px) {
+  .outer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .offer__block---img {
+    width: 280px;
+    height: 220px;
+  }
+  .form__wrapper {
+    width: 310px;
+  }
+  .offer-btn {
+    width: 90px;
+    height: 90px;
+    top: 365px;
+    left: 65%;
+  }
+  .revolution__marketing {
+    margin-top: 20px;
+  }
+  .img-1 {
+    width: 65px;
+    height: 65px;
+  }
+  .img-2 {
+    width: 60px;
+    height: 74px;
+  }
+  .img-3 {
+    width: 56px;
+    height: 62px;
+  }
+  .smartphone__wrapper p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 341px) {
+  .offer__wrapper {
+    height: 830px;
+  }
+  .offer__block-1 h1 {
+    font-size: 28px;
+  }
+  .offer__block-1 h2 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  .revolution {
+    height: 100%;
+  }
+  .revolution__block {
+    height: 580px;
+  }
+}/*# sourceMappingURL=style.css.map */
