@@ -11,7 +11,7 @@
 //     });
 // })(jQuery);
 const burgerBtn = document.querySelector(".burger");
-const burgerClose = document.querySelector(".nav-menu__wrapp");
+const burgerClose = document.querySelector(".nav-menu");
 
 
 burgerBtn.addEventListener("click", function (){   
