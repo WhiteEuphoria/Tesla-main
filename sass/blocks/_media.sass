@@ -1,11 +1,21 @@
 @media (max-width: 1401px)
-    .reviews
-        &__coments
-            display: flex
-            justify-content: space-between
+    // .reviews
+    //     &__coments
+    //         display: flex
+    //         flex-direction: column
+    //         align-items: ce
 @media (max-width: 1281px)
     .coments
         width: 70%
+    .reviews
+        height: 540px
+        &__coments
+            justify-content: space-around
+        &__block
+            height: 200px
+            & p
+                width: 320px
+
 @media (max-width: 1094px)
     .offer
         &__wrapper
@@ -17,6 +27,12 @@
             &--img
                 width: 90%
                 height: 60%
+    .reviews
+        height: 580px
+        &__block
+            height: 220px
+            & p
+                width: 280px
 
 @media (max-width: 1024px)
     .text-s
@@ -88,6 +104,25 @@
             padding: 15px 20px
     .coment
         height: 740px
+    .reviews
+        height: 680px
+        &__coments
+            flex-direction: column
+            align-items: center
+        &__coment
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+        &__block
+            height: 140px
+            & p
+                width: 440px
+    .rev-1
+        width: 72px
+        height: 72px
+    .rev-2
+        width: 72px
+        height: 72px
 @media (max-width: 769px)
     .outer
         padding-top: 60px
@@ -128,6 +163,17 @@
         margin-left: 100px
     .coment
         height: 780px
+    .reviews
+        height: 640px
+
+        &__coment
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+        &__block
+
+            & p
+                width: 400px
 @media (max-width: 721px)
     .form
         &__wrapper
@@ -136,6 +182,9 @@
             width: 440px
     .offer-btn
         top: 290px
+    .reviews
+        height: 700px
+
 @media (max-width: 561px)
     .revolution
         height: 100%
