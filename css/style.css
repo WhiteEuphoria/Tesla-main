@@ -475,6 +475,7 @@ ul, li {
 }
 .teslax__wrapper {
   text-align: center;
+  margin-bottom: 30px;
 }
 .teslax p {
   text-align: center;
@@ -878,6 +879,11 @@ ul, li {
     height: 50px;
     margin-bottom: 10px;
   }
+  .teslax__logo {
+    width: 300px;
+    height: 70px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 391px) {
   .outer {
@@ -955,5 +961,11 @@ ul, li {
   }
   .reviews__block p {
     width: 180px;
+  }
+  .teslax__logo {
+    margin-bottom: 20px;
+  }
+  .teslax p {
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
