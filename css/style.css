@@ -464,9 +464,24 @@ ul, li {
 }
 
 .frm2 {
-  display: none;
   width: 420px;
   height: 68px;
+}
+
+.teslax__logo {
+  width: 300px;
+  height: 70px;
+  margin-bottom: 40px;
+}
+.teslax__wrapper {
+  text-align: center;
+}
+.teslax p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.teslax p:last-child {
+  margin: 0;
 }
 
 @media (max-width: 1281px) {
@@ -690,6 +705,9 @@ ul, li {
   .form2__btn {
     display: block;
     height: 60px;
+  }
+  .frm2 {
+    display: none;
   }
 }
 @media (max-width: 721px) {
