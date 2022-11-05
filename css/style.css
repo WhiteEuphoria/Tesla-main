@@ -710,6 +710,35 @@ ul, li {
   .frm2 {
     display: none;
   }
+  .nav-menu--active {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 74px;
+    bottom: 0;
+    background-color: white;
+    width: 300px;
+    z-index: 100;
+    border-radius: 0 8px 8px 8px;
+    -webkit-animation: vis 0.8s forwards;
+            animation: vis 0.8s forwards;
+  }
+  .nav-menu {
+    align-items: center;
+  }
+  .nav-menu__item {
+    margin: 0;
+    padding-bottom: 17px;
+    padding-left: 50px;
+    font-weight: 400;
+  }
+  .nav-menu__item:last-child {
+    padding-bottom: 0;
+  }
+  .nav-menu__item:first-child {
+    padding-top: 50px;
+  }
 }
 @media (max-width: 721px) {
   .form__wrapper {
@@ -973,7 +1002,7 @@ ul, li {
   display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 769px) {
   .burger {
     display: block;
     width: 30px;
