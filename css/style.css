@@ -397,7 +397,7 @@ ul, li {
 }
 .reviews__coments {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .reviews__coment {
   display: flex;
@@ -441,6 +441,31 @@ ul, li {
   background-position: center;
   width: 82px;
   height: 82px;
+}
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form2__wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.form2__btn {
+  display: none;
+}
+.form2__inputs {
+  background: rgba(207, 207, 207, 0.69);
+  width: 23%;
+  height: 68px;
+}
+
+.frm2 {
+  width: 420px;
+  height: 68px;
 }
 
 @media (max-width: 1281px) {
